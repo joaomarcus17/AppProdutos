@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Produtos">
+
+    <LinearLayout
+        android:id="@+id/navBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#242424"
+        android:elevation="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_weight="7"
+        android:text="Produtos"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_below="@+id/navBar"
+        android:id="@+id/produtos"
+        >
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_below="@+id/produtos">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Produto 1"
+            android:id="@+id/produto1"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_below="@+id/produto1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Produto 2"
+            android:id="@+id/produto2"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_below="@+id/produto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Produto 3"
+            android:id="@+id/produto3"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_below="@+id/produto3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Produto 4"
+            android:id="@+id/produto4"
+            android:textSize="20dp"/>
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
